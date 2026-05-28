@@ -49,7 +49,7 @@ export default function Projects() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/api/projects')
+    fetch('https://portfolio-backend-s4kj.onrender.com/api/projects')
       .then((r) => r.json())
       .then((data) => setProjects(Array.isArray(data) && data.length ? data : fallback))
       .catch(() => setProjects(fallback))
