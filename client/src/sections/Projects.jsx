@@ -86,10 +86,16 @@ export default function Projects() {
                 {/* Image */}
                 <div className="relative h-52 overflow-hidden">
                   <img
-                    src={project._id === '1' ? assistantImg : project._id === '3' ? snakegameImg : project.image || assistantImg}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
+  src={
+    project.title.includes('AI Voice Assistant')
+      ? assistantImg
+      : project.title.includes('Snake Game')
+      ? snakegameImg
+      : project.image
+  }
+  alt={project.title}
+  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+/>
                   <div className="absolute inset-0 bg-gradient-to-t from-[#030014] via-transparent to-transparent" />
                 </div>
 
