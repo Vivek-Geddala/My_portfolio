@@ -54,8 +54,8 @@ export default function About() {
                 <h3 className="text-lg font-bold" style={{ fontFamily: 'Orbitron, sans-serif' }}>Professional Summary</h3>
               </div>
               <p className="text-white/70 leading-relaxed">
-                I'm <span className="text-[#00d4ff] font-semibold">Geddala Vivek</span> (Chinnu), an aspiring AI Engineer
-                and full-stack developer based in <span className="text-white font-medium">Vadodara, Gujarat, India</span>.
+                I'm <span className="text-[#00d4ff] font-semibold">Geddala Vivek</span>, <span className="text-white font-medium">an aspiring AI Engineer</span>
+                and<span className="text-white font-medium"> full-stack developer</span> based in Vadodara, Gujarat, India.
                 I specialize in building intelligent, production-ready applications using Python, the MERN stack,
                 and cutting-edge Generative AI APIs.
               </p>
